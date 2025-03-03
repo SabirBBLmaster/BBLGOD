@@ -1,0 +1,100 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4fff4; /* Light green background */
+    color: #222;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Headings */
+h1, h2 {
+    color: #2e7d32; /* Dark green */
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 0;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #4caf50; /* Green */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Button Hover Animation */
+.btn:hover {
+    background-color: #388e3c; /* Darker Green */
+    transform: scale(1.05);
+    animation: bounce 0.4s ease-in-out;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #1b1b1b;
+    color: white;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.dark-mode .container {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .btn {
+    background-color: #66bb6a; /* Light Green */
+}
+
+.dark-mode .btn:hover {
+    background-color: #43a047; /* Slightly Darker */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
